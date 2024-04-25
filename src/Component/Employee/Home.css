@@ -1,0 +1,62 @@
+.heading {
+  text-align: center;
+  background-color: #512da8;
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 2px;
+}
+
+.container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-timesheet {
+  width: 40%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.list {
+  width: 45%;
+}
+.container {
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the flex container */
+}
+
+.add-timesheet {
+  width: 50%; /* Adjust width as needed */
+  margin-right: 20px; /* Add some space between form and list */
+}
+
+.list-container {
+  flex: 1; /* Make the list container grow to fill available space */
+  max-height: 700px; /* Adjust the height as needed */
+  overflow-y: scroll;
+}

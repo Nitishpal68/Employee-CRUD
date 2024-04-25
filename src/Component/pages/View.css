@@ -1,0 +1,45 @@
+.header {
+  text-align: center;
+  background-color: orange;
+  color: white;
+  padding: 10px;
+}
+
+.table-container {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.timesheet-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timesheet-table th,
+.timesheet-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.timesheet-table th {
+  background-color: #616161;
+  color: white;
+}
+
+.back-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-button button {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button button:hover {
+  background-color: #135ba1;
+}

@@ -1,0 +1,133 @@
+.header {
+  text-align: center;
+  background-color: orange;
+  color: white;
+  padding: 10px;
+}
+
+.table-container {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  background-color: #616161;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #dddddd;
+}
+
+td a,
+td span {
+  margin-right: 10px;
+  cursor: pointer;
+  color: blue;
+}
+
+td a:hover,
+td span:hover {
+  text-decoration: underline;
+}
+
+/* CSS for Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* CSS for Font Awesome Icons */
+.fa-eye:before {
+  content: "\f06e"; /* Eye icon */
+  font-family: "Font Awesome 5 Free";
+}
+
+.fa-edit:before {
+  content: "\f044"; /* Edit icon */
+  font-family: "Font Awesome 5 Free";
+}
+/* CSS for Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* CSS for Font Awesome Icons */
+.fa-trash-alt:before {
+  content: "\f2ed"; /* Trash icon */
+  font-family: "Font Awesome 5 Free";
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+.fa-edit {
+  color: #ffc801;
+}
+.fa-solid fa-eye {
+  color: #ffc801;
+}
