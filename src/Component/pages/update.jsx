@@ -24,10 +24,7 @@ export const Update = () => {
   });
   const navigate = useNavigate();
   const [status, setStatus] = useState(false);
-
-  const handleClick = () => {
-    navigate("/");
-  };
+  const [isChecked, setIsChecked] = useState(false);
 
   useEffect(() => {
     async function getData() {
@@ -47,6 +44,7 @@ export const Update = () => {
           salary: employeedata.data[0].salary,
           address: employeedata.data[0].address,
         });
+        localStorage.setItem("EmployeeData", JSON.stringify(employeedata.data));
         console.log(employeedata.data);
       } catch (error) {
         console.log("Something went wrong");
@@ -54,6 +52,11 @@ export const Update = () => {
     }
     getData();
   }, [id]);
+
+  const handleClick = () => {
+    navigate("/");
+    localStorage.removeItem("EmployeeData");
+  };
 
   function onTextFieldChange(e) {
     setData({
@@ -116,6 +119,10 @@ export const Update = () => {
 
   const handleOptionChange = (e) => {
     setData({ ...employeedata, gender: e.target.value });
+  };
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
   };
 
   return (
@@ -207,6 +214,26 @@ export const Update = () => {
               />
               Female
             </label>
+
+            {/* <div className="form-group">
+              <label>
+                <input
+                  type="checkbox"
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                />
+                Gujarat
+              </label>
+              {isChecked && (
+                <div>
+                  <select>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Rajkot">Rajkot</option>
+                    <option value="Anand">Anand</option>
+                  </select>
+                </div>
+              )}
+            </div> */}
 
             {/* <p>Selected option: {employeedata.gender}</p> */}
 
